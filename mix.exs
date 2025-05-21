@@ -104,6 +104,7 @@ defmodule Stemex.Mixfile do
       app: :stemex,
       version: "0.2.0",
       elixir: "~> 1.0",
+      elixirc_options: [ignore_module_conflict: true],
       compilers: compilers(Mix.env()),
       package: [
         files: ["lib", "c_src", "algorithms", "mix.exs", "README.md", "LICENSE"],
